@@ -12,7 +12,7 @@ const calendarData = ref<ICalendar[]>(data);
 </script>
 
 <template>
-  <div v-for="month in calendarData" :key="month">
+  <div v-for="month in calendarData" :key="month.name">
     <div>{{month.name}}</div>
     <div class="flex">
       <div v-for="col in 37" :key="col" class="border-2 border-black w-32 h-32">
