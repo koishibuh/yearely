@@ -18,7 +18,7 @@ jobs:
       - name: Install & Build
         working-directory: web-app
         env: # Needs to match the repo name
-          VITE_BASE_URL: /timely/ 
+          VITE_BASE_URL: /yearely/ 
         run: |
           npm install
           npm run build
